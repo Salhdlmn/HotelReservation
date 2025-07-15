@@ -1,0 +1,287 @@
+﻿﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sona Template">
+    <meta name="keywords" content="Sona, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SONA</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="~/sona-master/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="~/sona-master/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="icon_close"></i>
+        </div>
+        <div class="search-icon  search-switch">
+            <i class="icon_search"></i>
+        </div>
+
+
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> (12) 345 67890</li>
+            <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="~/sona-master/img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li class="active"><a href="./index.html">Anasayfa</a></li>
+                                    <li><a href="./rooms.html">Odalar</a></li>
+                                    <li><a href="./about-us.html"> Hakkımızda</a></li> 
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="icon_search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hero-text">
+                        <h1>Sona Lüks Hotel Rehberi</h1>
+                        <p>
+                            İşte uluslararası seyahat ve düşük fiyatlı otel odaları bulmak için öneriler de dahil olmak üzere en iyi otel rezervasyon siteleri.
+                        </p>
+                        <a href="#" class="primary-btn"> Şimdi Keşfet</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                    <div class="booking-form">
+                        <h3>Hotel Ara</h3>
+                        <form action="/Hotel/SearchHotel" method="post">
+                            <div class="check-date">
+                                <label for="date-in">Şehir:</label>
+                                <input type="text" name="City">
+                            </div>
+                            <div class="check-date">
+                                <label for="date-out">Giriş:</label>
+                                <input type="text" name="CheckIn" class="date-input" id="date-in">
+                                <i class="icon_calendar"></i>
+                            </div>
+                            <div class="check-date">
+                                <label for="date-out">Çıkış:</label>
+                                <input type="text" name="CheckOut" class="date-input" id="date-out">
+                                <i class="icon_calendar"></i>
+                            </div>
+                            <div class="select-option">
+                                <label for="guest">Misafir:</label>
+                                <select id="guest" name="Adults">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="select-option">
+                                <label for="room">Oda:</label>
+                                <select id="room" name="Rooms">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <button type="submit">Otel Bul</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="/sona-master/img/hero/hero-1.jpg"></div>
+            <div class="hs-item set-bg" data-setbg="/sona-master/img/hero/hero-2.jpg"></div>
+            <div class="hs-item set-bg" data-setbg="/sona-master/img/hero/hero-3.jpg"></div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Us Section Begin -->
+    <section class="aboutus-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <span> Hakkımızda</span>
+                            <h2>Intercontinental LA <br />Westlake Hotel</h2>
+                        </div>
+                        <p class="f-para">
+                            Sona.com önde gelen bir online konaklama sitesidir. Seyahat konusunda tutkuluyuz. Her gün, 41 dilde 90 yerel web sitesinde milyonlarca gezgine ilham veriyor ve ulaşıyoruz.
+
+                            Dolayısıyla, mükemmel otel, tatil evi, tatil köyü, daire, misafirhane veya ağaç ev rezervasyonu söz konusu olduğunda, sizi teminat altına alıyoruz.
+                        </p>
+                        <p class="s-para">
+                            So when it comes to booking the perfect hotel, vacation rental, resort,
+                            apartment, guest house, or tree house, we’ve got you covered.
+                        </p>
+                        <a href="#" class="primary-btn about-btn">Daha fazla</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="~/sona-master/img/about/about-1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="~/sona-master/img/about/about-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+    <!-- Services Section End -->
+    <!-- Home Room Section Begin -->
+    <!-- Home Room Section End -->
+    <!-- Testimonial Section Begin -->
+    <!-- Testimonial Section End -->
+    <!-- Blog Section BeginS -->
+    <!-- Blog Section EndY -->
+    <!-- Footer Section BeginI -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="~/sona-master/img/footer-logo.png" alt="">
+                                </a>
+                            </div>
+                            <p>We inspire and reach millions of travelers<br /> across 90 local websites</p>
+                            <div class="fa-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contact Us</h6>
+                            <ul>
+                                <li>(12) 345 67890</li>
+                                <li>info.colorlib@gmail.com</li>
+                                <li>856 Cordia Extension Apt. 356, Lake, United State</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+                            <h6>New latest</h6>
+                            <p>Get the latest updates and offers.</p>
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Environmental Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="co-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section EndL -->
+    <!-- Search model BeginD -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model endI -->
+    <!-- Js PluginsZ -->
+    <script src="~/sona-master/js/jquery-3.3.1.min.js"></script>
+    <script src="~/sona-master/js/bootstrap.min.js"></script>
+    <script src="~/sona-master/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/sona-master/js/jquery.nice-select.min.js"></script>
+    <script src="~/sona-master/js/jquery-ui.min.js"></script>
+    <script src="~/sona-master/js/jquery.slicknav.js"></script>
+    <script src="~/sona-master/js/owl.carousel.min.js"></script>
+    <script src="~/sona-master/js/main.js"></script>
+</body>
+
+</html>
